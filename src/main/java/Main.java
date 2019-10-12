@@ -1,4 +1,5 @@
 import interact.Reader;
+import retrieve.Retriever;
 
 public class Main {
 
@@ -7,8 +8,10 @@ public class Main {
         System.out.println("Welcome to pQuery");
         System.out.println();
         System.out.println("To get started, type 'help'");
-        Reader r = new Reader();
-        r.read();
+        Retriever ret = new Retriever();
+        ret.getData();
+        //Reader r = new Reader();
+        //r.read();
         System.out.println("Shutting down pQuery...");
     }
 }

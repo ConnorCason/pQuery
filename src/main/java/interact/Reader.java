@@ -19,7 +19,7 @@ public class Reader {
             String response = reader.cmdScanner.next();
             switch (response) {
                 case "fetch":
-                    cmd
+                    cmdHandler.fetch();
                 case "help":
                     cmdHandler.help();
                     break;
