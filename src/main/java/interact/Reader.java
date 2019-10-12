@@ -18,9 +18,8 @@ public class Reader {
             System.out.print(">");
             String response = reader.cmdScanner.next();
             switch (response) {
-                case "exit":
-                    cmdHandler.invalidQuit();
-                    break;
+                case "fetch":
+                    cmd
                 case "help":
                     cmdHandler.help();
                     break;
