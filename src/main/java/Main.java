@@ -1,4 +1,3 @@
-import interact.Reader;
 import retrieve.Retriever;
 
 public class Main {

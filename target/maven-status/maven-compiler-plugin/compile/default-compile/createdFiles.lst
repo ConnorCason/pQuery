@@ -1,4 +1,5 @@
 Main.class
-interact/Reader.class
-interact/CommandHandler.class
-retrieve/Retriever.class
+interact\CommandHandler.class
+tools\Gson_Formatter.class
+interact\Reader.class
+retrieve\Retriever.class
