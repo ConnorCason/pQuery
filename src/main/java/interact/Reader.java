@@ -18,6 +18,8 @@ public class Reader {
             System.out.print(">");
             String response = reader.cmdScanner.next();
             switch (response) {
+                case "data":
+
                 case "fetch":
                     cmdHandler.fetch();
                 case "help":

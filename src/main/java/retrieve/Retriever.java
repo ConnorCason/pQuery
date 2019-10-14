@@ -22,17 +22,19 @@ public class Retriever {
 
     public void getData() {
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("http://api.tcgplayer.com/v1.36.0/catalog/categories"))
+                .uri(URI.create("http://api.tcgplayer.com/v1.36.0/inventory/productLists"))
                 .setHeader("Accept", "application/json")
                 .setHeader("Authorization", "bearer " + access_token)
                 .build();
         HttpResponse<String> response;
         try {
             response = client.send(request, HttpResponse.BodyHandlers.ofString());
-            System.out.println(formatter.format_json_string(response.body()));
+            String pretty_response = formatter.format_json_string(response.body());
+            System.out.println(pretty_response);
         }
         catch (Exception e) {
             System.out.println(e.getMessage());
         }
+
     }
 }

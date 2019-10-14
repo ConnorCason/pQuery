@@ -1,7 +1,5 @@
 package interact;
 
-import retrieve.Retriever;
-
 public class CommandHandler {
 
     public CommandHandler() {
@@ -9,6 +7,7 @@ public class CommandHandler {
     }
 
     public void fetch() {
+
     }
 
     public void help() {
